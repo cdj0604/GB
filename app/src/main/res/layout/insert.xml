@@ -1,20 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="월급" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText"
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="출근일수 : "
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="숫자만 입력하세요"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/save01"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="저장"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="월급을 입력하세요" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="교통비   : "
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="숫자만 입력하세요"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/save02"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="저장"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="식비   : "
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/edit03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="숫자만 입력하세요"
+            android:inputType="number"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/save03"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:text="저장"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="초기화"
+        android:textColor="#000000"
+        android:background="#cccccc"/>
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인" />
 
 </LinearLayout>

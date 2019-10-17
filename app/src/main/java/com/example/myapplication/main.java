@@ -13,15 +13,19 @@ public class main extends AppCompatActivity {
     public final String key01 = "key01";
     public final String key02 = "key02";
     public final String key03 = "key03";
+    public final String key04 = "key04";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        final TextView result = (TextView) findViewById(R.id.result);
-        final int sum = (getPreferenceInt(key02)+getPreferenceInt(key03)) * getPreferenceInt(key01);
+
+         TextView result = (TextView) findViewById(R.id.result);
+         int sum = getPreferenceInt(key02)+getPreferenceInt(key03);
+         int sum1 = sum* getPreferenceInt(key01);
+         int sum2 = sum1 + getPreferenceInt(key04);
         //값불러오기
 
-        result.setText("이번달 월급 : " +""+ + sum + "원");
+        result.setText("이번달 월급 : " +""+ + sum2 + "원");
     }
 
     // 데이터 불러오기 함수

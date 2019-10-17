@@ -23,22 +23,22 @@ public class MainActivity extends TabActivity{ // 상속이 TabActivity이다. �
         //첫번째 탭 만들기
         TabHost tabHost = getTabHost();
         TabHost.TabSpec spec;
+        Intent intent = new Intent().setClass(this, main.class);
 
-        Intent intent = new Intent().setClass(this,main.class);
-
-        spec = tabHost.newTabSpec("main").setIndicator("월급계산").setContent(intent);
+        spec = tabHost.newTabSpec("main").setIndicator("1").setContent(intent);
         tabHost.addTab(spec);
 
         //두번째 탭 만들기
-        intent = new Intent().setClass(this,icebox.class);
+         intent = new Intent().setClass(this, icebox.class);
 
-        spec = tabHost.newTabSpec("icebox").setIndicator("냉장고").setContent(intent);
+        spec = tabHost.newTabSpec("icebox").setIndicator("2").setContent(intent);
         tabHost.addTab(spec);
+
 
         //세번째 탭 만들기
         intent = new Intent().setClass(this,myinfor.class);
 
-        spec = tabHost.newTabSpec("myinfor").setIndicator("내정보").setContent(intent);
+        spec = tabHost.newTabSpec("myinfor").setIndicator("3").setContent(intent);
         tabHost.addTab(spec);
 
         //네번째 탭 만들기
